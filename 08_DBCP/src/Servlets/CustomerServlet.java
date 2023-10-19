@@ -19,7 +19,7 @@ public class CustomerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        // System.out.println("doget method is invoked");
-        BasicDataSource bds = new BasicDataSource();
+       /* BasicDataSource bds = new BasicDataSource();
         bds.setDriverClassName("com.mysql.cj.jdbc.Driver");
         bds.setUrl("jdbc:mysql://localhost:3306/thogakade");
         bds.setUsername("root");
@@ -28,7 +28,10 @@ public class CustomerServlet extends HttpServlet {
         bds.setInitialSize(5);
 
         ServletContext servletContext = req.getServletContext();
-        servletContext.setAttribute("bds",bds);
+        servletContext.setAttribute("bds",bds);*/
+
+        ServletContext servletContext = req.getServletContext();
+        BasicDataSource bds = (BasicDataSource) servletContext.getAttribute("bds");
 
         try {
             Connection connection = bds.getConnection();
