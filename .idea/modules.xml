@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01_HelloServelet/01_HelloServlet.iml" filepath="$PROJECT_DIR$/01_HelloServelet/01_HelloServlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_HttpRequest/02_HttpRequest.iml" filepath="$PROJECT_DIR$/02_HttpRequest/02_HttpRequest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_InBuildCP/07_InBuildCP.iml" filepath="$PROJECT_DIR$/07_InBuildCP/07_InBuildCP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_DBCP/08_DBCP.iml" filepath="$PROJECT_DIR$/08_DBCP/08_DBCP.iml" />
     </modules>
   </component>
 </project>

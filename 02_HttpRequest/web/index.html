@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hey java ee</h1>
+<button id="btn" type="button">Send a Request</button>
+<script src="assets/jquery/jquery-3.6.4.min.js"> </script>
+<script>
+    $("#btn").click(function () {
+      $.ajax({
+          url:"http://localhost:8080/abcd/customer",
+          success:function (resp){
+              console.log(resp)
+          }
+      })
+    });
+</script>
+</body>
+</html>
